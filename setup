@@ -99,7 +99,7 @@ if ! ensure_playwright_browser; then
   echo "Installing Playwright Chromium..."
   (
     cd "$GSTACK_DIR"
-    bunx playwright install chromium
+    bun x playwright install chromium
   )
 
   if [ "$IS_WINDOWS" -eq 1 ]; then
